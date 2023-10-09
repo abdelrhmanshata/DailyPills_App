@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lavender"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/logout"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="العلاج"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/addMedicine"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/add"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp" />
+
+</FrameLayout>
